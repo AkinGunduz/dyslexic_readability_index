@@ -11,9 +11,9 @@ setuptools.setup(
     description="A readability scoring library tailored to the specific needs of Turkish dyslexic readers.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/AkinGunduz/dyslexic_readability_index",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/AkinGunduz/dyslexic_readability_index/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
