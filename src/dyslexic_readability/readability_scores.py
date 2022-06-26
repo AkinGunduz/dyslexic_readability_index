@@ -17,7 +17,7 @@ class Readability:
         
         char_count = get_char_count(words)
         word_count = len(words)
-        sentence_count = 1 #len(get_sentences(text))
+        sentence_count = len(get_sentences(text))
         syllable_count = get_syllable_count(words)
         avg_words_p_sentence = word_count / sentence_count
         

@@ -16,10 +16,11 @@ class DyslexicScores():
     
     def __init__(self, my_text):
         sentences = utils.get_sentences(my_text)
-        self.my_text = sentences
+        self.my_text = my_text
+        self.my_sentences = sentences
         
     def find_Levenshtein_Distance(self):
-        for y in self.my_text:
+        for y in self.my_sentences:
             sentence = y.lower()
             sentence = sentence.split()
             sentence = ' '.join(sentence)
@@ -58,7 +59,7 @@ class DyslexicScores():
         return np.mean(scores)
 
     def find_mirror_words(self):
-        for x in self.my_text:
+        for x in self.my_sentences:
 
             sentence = x.lower()
             sentence = sentence.split()
@@ -66,8 +67,8 @@ class DyslexicScores():
             scores = []
 
             mirror_word_count = 0
-            my_text1 = sentence.lower()
-            result1 = my_text1.replace("p", "1").replace("b", "1").replace("d", "1").replace("h", "1").replace("g", "1").replace("ğ", "1")
+            my_sentences1 = sentence.lower()
+            result1 = my_sentences1.replace("p", "1").replace("b", "1").replace("d", "1").replace("h", "1").replace("g", "1").replace("ğ", "1")
             result2 = result1.replace("m", "2").replace("n", "2").replace("a", "2").replace("e", "2").replace("r", "2").replace("u", "2").replace("ü", "2")
             result3 = result2.replace("v", "3").replace("k", "3").replace("z", "3").replace("y", "3")
             result4 = result3.replace("s", "4").replace("ş", "4").replace("ö", "4").replace("o", "4").replace("c", "4").replace("ç", "4")
@@ -92,7 +93,7 @@ class DyslexicScores():
         return np.mean(scores)
     
     def find_similar_starts(self):
-        for x in self.my_text:
+        for x in self.my_sentences:
             sentence = x.lower()
             sentence = sentence.split()
             sentence = ' '.join(sentence)
@@ -132,7 +133,7 @@ class DyslexicScores():
      
     
     def cacophony(self):
-        for x in self.my_text:
+        for x in self.my_sentences:
             sentence = x.lower()
             sentence = sentence.split()
             sentence = ' '.join(sentence)
@@ -158,7 +159,7 @@ class DyslexicScores():
         return np.mean(scores)
 
     def articulation_score(self):
-        for x in self.my_text:
+        for x in self.my_sentences:
             sentence = x.lower()
             sentence = sentence.split()
             sentence = ' '.join(sentence)
@@ -195,17 +196,11 @@ class DyslexicScores():
 
         dyslexicReadabilityScore = score * 100
         
-        return dyslexicReadabilityScore
+        return round(dyslexicReadabilityScore,2)
 
     def overall_calculated_score(self):
-        
-        dyslexic_score = self.overall_dyslexic_score()
-
-        for y in self.my_text:
-            sentence = y.lower()
-            sentence = sentence.split()
-            sentence = ' '.join(sentence)
-
-            scores = []
         obj_r = readability_scores.Readability(self.my_text)
-        return scores
+        dyslexic_score = self.overall_dyslexic_score()
+        overall_calculated_score = (1- (0.01*dyslexic_score)) * obj_r.Atesman()
+        
+        return round(overall_calculated_score,2)

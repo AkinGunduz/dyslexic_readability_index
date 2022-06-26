@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="dyslexic-readability",
-    version="0.0.1",
+    version="0.0.2",
     author="Akin Gunduz",
     author_email="akngndz93@gmail.com",
     description="A readability scoring library tailored to the specific needs of Turkish dyslexic readers.",
