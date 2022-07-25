@@ -1,11 +1,14 @@
-import setuptools
+from setuptools import find_packages, setup
+
+requirements_lines = [line.strip() for line in open("requirements.txt").readlines()]
+install_requires = list(filter(None, requirements_lines))
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setuptools.setup(
+setup(
     name="dyslexic-readability",
-    version="0.0.2",
+    version="0.0.3",
     author="Akin Gunduz",
     author_email="akngndz93@gmail.com",
     description="A readability scoring library tailored to the specific needs of Turkish dyslexic readers.",
@@ -21,6 +24,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=find_packages(where="src"),
+    install_requires = install_requires,
     python_requires=">=3.6",
 )

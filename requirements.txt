@@ -1,0 +1,4 @@
+numpy
+nltk
+editdistance
+git+https://github.com/ftkurt/python-syllable.git@master

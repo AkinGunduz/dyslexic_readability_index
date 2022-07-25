@@ -1,18 +1,3 @@
-[project]
-name = "dyslexic-readability"
-description = "A readability scoring library tailored to the specific needs of Turkish dyslexic readers."
-authors = [
-    { name = "Akin Gunduz", email = "akngndz93@gmail.com" }
-]
-readme = "README.md"
-requires-python = ">=3.6"
-
 [build-system]
-requires = [
-    "setuptools >= 42",
-    "numpy",
-    "nltk",
-    "editdistance",
-    "git+https://github.com/ftkurt/python-syllable.git@master"
-]
+requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
