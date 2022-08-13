@@ -22,7 +22,6 @@ You can also install it from source:
   ...
 ```
 
-  
 ## Dependencies
 
 This project uses the following python libraries. Please use Python3+.
@@ -31,6 +30,7 @@ This project uses the following python libraries. Please use Python3+.
 `numpy`
 `editdistance`
 `python-syllable`
+
 ## Kullanım/Örnekler
 
 ```python
