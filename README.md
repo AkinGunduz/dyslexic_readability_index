@@ -2,24 +2,12 @@
 
 A readability scoring library tailored to the specific needs of Turkish dyslexic readers.
 
-## Basic Usage
+## Install
 
 The package is available on PyPI. Simply install it with pip:
 
 ```bash
   pip install dyslexic-readability
-```
-
-You can also install it from source:
-
-```bash
-  git@github.com:AkinGunduz/dyslexic_readability_index.git
-  Cloning into 'dyslexic_readability_index'...
-  ...
-
-  $ cd dyslexic_readability_index
-  $ python setup.py install
-  ...
 ```
 
 ## Dependencies
@@ -31,7 +19,7 @@ This project uses the following python libraries. Please use Python3+.
 `editdistance`
 `python-syllable`
 
-## Kullanım/Örnekler
+## Basic Usage
 
 ```python
 import dyslexic_scores
