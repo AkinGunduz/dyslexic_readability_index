@@ -1,5 +1,7 @@
 numpy
 nltk
 editdistance
-pip
-pip@ git+https://github.com/ftkurt/python-syllable.git@master
+pytest
+hypothesis
+mypy
+unidecode

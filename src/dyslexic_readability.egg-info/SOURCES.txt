@@ -16,3 +16,5 @@ src/dyslexic_readability/__pycache__/dyslexic_scores.cpython-39.pyc
 src/dyslexic_readability/__pycache__/main.cpython-39.pyc
 src/dyslexic_readability/__pycache__/readability_scores.cpython-39.pyc
 src/dyslexic_readability/__pycache__/utils.cpython-39.pyc
+src/dyslexic_readability/syllable/__init__.py
+src/dyslexic_readability/syllable/syllable.py
