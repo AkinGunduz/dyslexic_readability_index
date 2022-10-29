@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="dyslexic-readability",
-    version="0.0.3",
+    version="0.0.8",
     author="Akin Gunduz",
     author_email="akngndz93@gmail.com",
     description="A readability scoring library tailored to the specific needs of Turkish dyslexic readers.",

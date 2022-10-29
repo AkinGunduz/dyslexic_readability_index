@@ -9,8 +9,8 @@ import numpy as np
 import nltk
 import editdistance
 from nltk.util import ngrams
-from dyslexic_readability import utils
-import readability_scores
+from  dyslexic_readability import utils 
+from  dyslexic_readability import readability_scores
 
 class DyslexicScores():
     

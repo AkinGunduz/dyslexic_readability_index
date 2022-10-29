@@ -1,6 +1,5 @@
 from operator import imod
-import dyslexic_scores
-import readability_scores
+from dyslexic_readability import dyslexic_scores, readability_scores
 
 sentences = [
     "özge sarı topla oynadı",

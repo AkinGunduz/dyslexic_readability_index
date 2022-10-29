@@ -22,8 +22,7 @@ This project uses the following python libraries. Please use Python3+.
 ## Basic Usage
 
 ```python
-import dyslexic_scores
-import readability_scores
+from dyslexic_readability import dyslexic_scores, readability_scores
 
 story = (
     "Ormanların birinde bir sivrisinek yaşarmış."

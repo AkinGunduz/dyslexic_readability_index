@@ -1,9 +1,4 @@
-import math
-
-from utils import get_char_count
-from utils import get_words
-from utils import get_sentences
-from utils import get_syllable_count
+from  dyslexic_readability import utils
 
 
 class Readability:
@@ -13,12 +8,12 @@ class Readability:
         self.analyze_text(text)
 
     def analyze_text(self, text):
-        words = get_words(text)
+        words = utils.get_words(text)
         
-        char_count = get_char_count(words)
+        char_count = utils.get_char_count(words)
         word_count = len(words)
-        sentence_count = len(get_sentences(text))
-        syllable_count = get_syllable_count(words)
+        sentence_count = len(utils.get_sentences(text))
+        syllable_count = utils.get_syllable_count(words)
         avg_words_p_sentence = word_count / sentence_count
         
         self.analyzedVars = {

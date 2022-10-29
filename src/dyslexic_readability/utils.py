@@ -1,7 +1,6 @@
 import nltk
-
 from nltk.tokenize import RegexpTokenizer
-from syllable.syllable import Encoder
+from dyslexic_readability.syllable.syllable import Encoder
 
 TOKENIZER = RegexpTokenizer('(?u)\W+|\$[\d\.]+|\S+')
 SPECIAL_CHARS = ['.', ',', '!', '?']
