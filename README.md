@@ -17,7 +17,6 @@ This project uses the following python libraries. Please use Python3+.
 `nltk`
 `numpy`
 `editdistance`
-`python-syllable`
 
 ## Basic Usage
 

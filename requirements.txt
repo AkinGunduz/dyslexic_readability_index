@@ -1,7 +1,3 @@
 numpy
 nltk
 editdistance
-pytest
-hypothesis
-mypy
-unidecode

@@ -1,4 +1,3 @@
-from operator import imod
 from dyslexic_readability import dyslexic_scores, readability_scores
 
 sentences = [
