@@ -37,13 +37,10 @@ def spellword(word: str):
                 tenword = tenword[y:]
                 break
 
-    if tenword == '0':
+    if tenword == '0' and len(word) > 1:
         syllable_list[-1] = syllable_list[-1] + word
     elif word:
         syllable_list.append(word)
-
-    if len(syllable_list) != len_spell:
-        return False
 
     return syllable_list
 
